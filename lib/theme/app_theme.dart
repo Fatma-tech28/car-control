@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
-  // --- Sky-blue ramp (lightest -> darkest) ---
-  static const Color blue50  = Color(0xFFE8F4FD);
-  static const Color blue100 = Color(0xFFD0E9FB);
-  static const Color blue200 = Color(0xFFA3D3F7);
-  static const Color blue300 = Color(0xFF5DB5F2);
-  static const Color blue400 = Color(0xFF2A9DF4); // main sky blue
-  static const Color blue500 = Color(0xFF007AFF); // strong accent
-  static const Color blue600 = Color(0xFF005FCC);
+  // --- Brand blue ramp (lightest -> darkest) ---
+  static const Color blue50 = Color(0xFFF0F3FA);
+  static const Color blue100 = Color(0xFFD5DEEF);
+  static const Color blue200 = Color(0xFFB1C9EF);
+  static const Color blue300 = Color(0xFF8AAEE0);
+  static const Color blue400 = Color(0xFF628ECB);
+  static const Color blue500 = Color(0xFF395886);
+  static const Color blue600 = Color(0xFF283F63);
 
   // --- Neutral light shell ---
   static const Color background     = Color(0xFFF7F9FC); // page bg
