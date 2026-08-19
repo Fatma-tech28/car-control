@@ -13,18 +13,18 @@ void main() {
 class InspectionCarApp extends StatelessWidget {
   const InspectionCarApp({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (_) => CarState(MockCarConnectionService())..init(),
-      child: MaterialApp(
-        title: 'Inspection Rover',
-        debugShowCheckedModeBanner: false,
-        theme: AppTheme.dark,
-        darkTheme: AppTheme.dark,
-        themeMode: ThemeMode.dark,
-        home: const HomeShell(),
-      ),
-    );
-  }
+@override
+Widget build(BuildContext context) {
+  return ChangeNotifierProvider(
+    create: (_) => CarState(MockCarConnectionService())..init(),
+    child: MaterialApp(
+      title: 'Inspection Rover',
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.light,
+      // darkTheme: AppTheme.dark,        // optional: remove if not needed
+      themeMode: ThemeMode.light,          // <-- change this
+      home: const HomeShell(),
+    ),
+  );
+ }
 }
